@@ -3,8 +3,8 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 
 //═══════[Required Variables]════════\\
-global.audio= "" ;  
-global.video= "" ;
+global.audio= "true" ;  
+global.video= "false" ;
 global.devs = "923184474176"
 global.port =process.env.PORT
 global.appUrl=process.env.APP_URL||""                       // put your app url here,
@@ -26,12 +26,12 @@ global.THUMB_IMAGE=process.env.THUMB_IMAGE||"https://telegra.ph/file/d5b1c3544fe
 
 
 
-global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null,923184474176";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
+global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null,400771048185";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "400771048185";
 
 module.exports = {
 
-  menu: process.env.MENU || "", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
+  menu: process.env.MENU || "1", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
   style:process.env.STYLE|| "2",  // put '1' & "2" here to check bot styles
 
 
@@ -42,13 +42,13 @@ module.exports = {
 
  
   author: process.env.PACK_AUTHER || "Suhail-MD",
-  packname: process.env.PACK_NAME || "♥️👁️🙈💋 ",
+  packname: process.env.PACK_NAME || "🥵❤🌹💀 ",
   botname: process.env.BOT_NAME   || "sᴜʜᴀɪʟ-ᴍᴅ",
   ownername:process.env.OWNER_NAME|| "It'x Suhail",
 
 
-  sessionName:process.env.SESSION_ID|| "",
-  userImages:process.env.USER_IMAGES|| "text",
+  sessionName:process.env.SESSION_ID|| "".
+  userImages:process.env.USER_IMAGES|| "hi nigga",
   errorChat: process.env.ERROR_CHAT || "",
   warncount: process.env.WARN_COUNT || 3,
   disablepm: process.env.DISABLE_PM || "false",
@@ -57,7 +57,7 @@ module.exports = {
   KOYEB_API: process.env.KOYEB_API  || "false",
 readmessage:process.env.READ_MESSAGE|| "false",
  aitts_Voice_Id:process.env.AITTS_ID|| "37",
- alwaysonline:process.env.WAPRESENCE|| "unavailable", // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
+ alwaysonline:process.env.WAPRESENCE|| "available", // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
  
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY || "",
@@ -73,7 +73,7 @@ readmessage:process.env.READ_MESSAGE|| "false",
 
 
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "",
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "private",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "public",
   LANG: process.env.THEME ? process.env.THEME.toUpperCase() : "SUHAIL",
 
 };
